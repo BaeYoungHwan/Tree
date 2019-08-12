@@ -1,0 +1,811 @@
+Species,Value
+Apple,MA2
+"Ash, Green",FRPE
+"Ash, White",FRAM
+Baldcypress,TADI
+"Basswood, American",TIAM
+"Bayberry, Southern",MYCE
+"Birch, River",BENI
+Boxelder,ACNE
+"Buckeye, Ohio",AEGL
+"Camellia, Sasanqua",CASA
+"Catalpa, Southern",CABI
+"Cedar, Atlantic white",CHTH
+"Cedar, Eastern red",JUVI
+"Cedar, Northern white",THOC
+"Cherry, Black",PRSE1
+"Cherry, Kwanzan",PRSE2
+Chokeberry,PHSP2
+Christmasbush,SEBI5
+"Cottonwood, Eastern",PODE
+"Crabapple, Southern",PYAN
+Crapemyrtle,LAIN
+"Crapemyrtle, Muskogee",LAMU
+"Crapemyrtle, Natchez",LANA
+"Crapemyrtle, Tuscarora",LATU
+"Crapemyrtle, Tuskegee",LATU1
+"Cypress, Italian",CUSE
+"Cypress, Leyland",CULE
+Dahoon,ILCA
+"Dahoon, Myrtle",ILMY
+"Dogwood, Flowering",COFL
+"Dogwood, Kousa",COKO
+Elm,ULS
+"Elm, American",ULAM
+"Elm, Chinese",ULPA
+"Elm, Drake Chinese",ULPADR
+"Elm, Emer II/Emerald Vase Chinese",ULPAEM
+"Elm, Siberian",ULPU
+"Elm, Slippery",ULRU
+"Elm, Winged",ULAL
+"Eucalyptus, Silver dollar",EUCI
+"Forsythia, Showy",FOIN3
+Ginkgo,GIBI
+"Gum, Sydney blue",EUSA
+"Haw, Black",VIPR
+"Hawthorn, Washington",CRPH
+Hickory,CA1
+"Hickory, Bitternut",CACO
+"Hickory, Mockernut",CATO
+"Hickory, Pignut",CAGL
+Holly,ILSP
+"Holly, American",ILOP
+"Holly, Chinese",ILCO2
+"Holly, Savannah",ILOPSA
+"Holly, Topal",ILAT
+Honeylocust,GLTR
+"Hornbeam, American",CACA
+Juniper,JU
+"Laurelcherry, Carolina",PRCA
+Ligustro,LISI
+"Linden, Littleleaf",TICO
+"Locust, Black",ROPS
+Loquat,ERJA
+"Magnolia, Chinese magnolia; Saucer",MASO
+"Magnolia, Little gem southern",MAGRLG
+"Magnolia, Southern",MAGR
+"Magnolia, Star",MAST
+"Magnolia, Umbrella",MATR
+"Maple, Amur",ACGI
+"Maple, Japanese",ACPA
+"Maple, October glory red",ACRUOC
+"Maple, Red",ACRU
+"Maple, Silver",ACSA1
+"Maple, Sugar",ACSA2
+"Maple, Trident",ACBU
+Mimosa,ALJU
+"Mulberry, Paper",BRPA
+"Mulberry, Red",MORU
+Oak,QU
+"Oak, Black",QUVE
+"Oak, Bluejack",QUCI
+"Oak, Darlington",QUHE
+"Oak, Laurel",QULA2
+"Oak, Live",QUVI
+"Oak, Northern red",QURU
+"Oak, Pin",QUPA
+"Oak, Post",QUST
+"Oak, Sawtooth",QUAC
+"Oak, Scarlet",QUCO
+"Oak, Shumard",QUSH
+"Oak, Southern red",QUFA
+"Oak, Swamp chestnut",QUMI
+"Oak, Turkey",QULA1
+"Oak, Water",QUNI
+"Oak, White",QUAL
+"Oak, Willow",QUPH
+Oleander,NEOL
+"Olive, Sweet",OSFR
+"Orange, Sour",CIAU2
+"Palm, Canary Island date",PHCA
+"Palm, European fan",CHHU
+"Palm, Jelly",BUCA
+"Palm, Sago",CYRE11
+"Palm, Windmill",TRFO
+"Palmetto, Cabbage",SAPA
+"Palmetto, Dwarf",SAMI8
+"Parasoltree, Chinese",FISI
+Peach,PRPE2
+"Pear, Callery",PYCA
+"Pear, Callery 'Bradford'",PYCABR
+"Pear, Common",PYCO
+Pecan,CAIL
+"Persimmon, Common",DIVI
+"Photinia, Fraser",PHFR
+"Photinia, Taiwanese",PHSE
+"Pine, Austrian",PINI
+"Pine, Bolander beach",PICO5
+"Pine, Eastern white",PIST
+"Pine, Loblolly",PITA
+"Pine, Longleaf",PIPA
+"Pine, Shortleaf",PIEC
+"Pine, Slash",PIEL
+"Pine, Virginia",PIVI
+"Pistache, Chinese",PICH
+"Planetree, London",PLAC
+"Planetree, London 'Bloodgood'",PLACBL
+Plum,PR
+"Plum, American",PRAM
+"Plum, Cherry",PRCE
+"Podocarpus, Yew",POMA
+"Poplar, White",POAL
+Pride-of-India,MEAZ
+"Privet, Japanese",LIJA
+Redbay,PEBO
+"Redbud, Eastern",CECA
+"Redwood, Dawn",MEGL
+Rose-of-sharon,HISY
+"Rosemallow, Dixie",HIMU3
+Sassafras,SAAL
+"Spruce, Blue",PIPU
+Sugarberry,CELA
+Sweetgum,LIST
+"Sycamore, American",PLOC
+Tallowtree,TRSE6
+"Thorn, Fire",PYCO2
+"Thorn, Jerusalem",PAAC
+"Tree, Camphor",CICA
+"Tree, Chaste",VIAG
+"Tree, Chinese flame",KOBI
+"Tree, Goldenrain",KOPA
+"Tree, Tulip",LITU
+"Tupelo, Black",NYSY
+"Walnut, Black",JUNI
+"Washingtonia, Mexican",WARO
+Willow,SA
+"Willow, Black",SANI
+"Willow, Corkscrew",SAMA1
+"Willow, Wisconsin weeping",SAPE12
+"Wisteria, Japanese",WIFL
+Yaupon,ILVO
+Yellowwood,CLLU
+"Yucca, Moundlily",YUGL2
+"Zelkova, Japanese",ZESE
+Apple,MA2
+"Ash, Green",FRPE
+"Ash, White",FRAM
+Baldcypress,TADI
+"Basswood, American",TIAM
+"Bayberry, Southern",MYCE
+"Birch, River",BENI
+Boxelder,ACNE
+"Buckeye, Ohio",AEGL
+"Camellia, Sasanqua",CASA
+"Catalpa, Southern",CABI
+"Cedar, Atlantic white",CHTH
+"Cedar, Eastern red",JUVI
+"Cedar, Northern white",THOC
+"Cherry, Black",PRSE1
+"Cherry, Kwanzan",PRSE2
+Chokeberry,PHSP2
+Christmasbush,SEBI5
+"Cottonwood, Eastern",PODE
+"Crabapple, Southern",PYAN
+Crapemyrtle,LAIN
+"Crapemyrtle, Muskogee",LAMU
+"Crapemyrtle, Natchez",LANA
+"Crapemyrtle, Tuscarora",LATU
+"Crapemyrtle, Tuskegee",LATU1
+"Cypress, Italian",CUSE
+"Cypress, Leyland",CULE
+Dahoon,ILCA
+"Dahoon, Myrtle",ILMY
+"Dogwood, Flowering",COFL
+"Dogwood, Kousa",COKO
+Elm,ULS
+"Elm, American",ULAM
+"Elm, Chinese",ULPA
+"Elm, Drake Chinese",ULPADR
+"Elm, Emer II/Emerald Vase Chinese",ULPAEM
+"Elm, Siberian",ULPU
+"Elm, Slippery",ULRU
+"Elm, Winged",ULAL
+"Eucalyptus, Silver dollar",EUCI
+"Forsythia, Showy",FOIN3
+Ginkgo,GIBI
+"Gum, Sydney blue",EUSA
+"Haw, Black",VIPR
+"Hawthorn, Washington",CRPH
+Hickory,CA1
+"Hickory, Bitternut",CACO
+"Hickory, Mockernut",CATO
+"Hickory, Pignut",CAGL
+Holly,ILSP
+"Holly, American",ILOP
+"Holly, Chinese",ILCO2
+"Holly, Savannah",ILOPSA
+"Holly, Topal",ILAT
+Honeylocust,GLTR
+"Hornbeam, American",CACA
+Juniper,JU
+"Laurelcherry, Carolina",PRCA
+Ligustro,LISI
+"Linden, Littleleaf",TICO
+"Locust, Black",ROPS
+Loquat,ERJA
+"Magnolia, Chinese magnolia; Saucer",MASO
+"Magnolia, Little gem southern",MAGRLG
+"Magnolia, Southern",MAGR
+"Magnolia, Star",MAST
+"Magnolia, Umbrella",MATR
+"Maple, Amur",ACGI
+"Maple, Japanese",ACPA
+"Maple, October glory red",ACRUOC
+"Maple, Red",ACRU
+"Maple, Silver",ACSA1
+"Maple, Sugar",ACSA2
+"Maple, Trident",ACBU
+Mimosa,ALJU
+"Mulberry, Paper",BRPA
+"Mulberry, Red",MORU
+Oak,QU
+"Oak, Black",QUVE
+"Oak, Bluejack",QUCI
+"Oak, Darlington",QUHE
+"Oak, Laurel",QULA2
+"Oak, Live",QUVI
+"Oak, Northern red",QURU
+"Oak, Pin",QUPA
+"Oak, Post",QUST
+"Oak, Sawtooth",QUAC
+"Oak, Scarlet",QUCO
+"Oak, Shumard",QUSH
+"Oak, Southern red",QUFA
+"Oak, Swamp chestnut",QUMI
+"Oak, Turkey",QULA1
+"Oak, Water",QUNI
+"Oak, White",QUAL
+"Oak, Willow",QUPH
+Oleander,NEOL
+"Olive, Sweet",OSFR
+"Orange, Sour",CIAU2
+"Palm, Canary Island date",PHCA
+"Palm, European fan",CHHU
+"Palm, Jelly",BUCA
+"Palm, Sago",CYRE11
+"Palm, Windmill",TRFO
+"Palmetto, Cabbage",SAPA
+"Palmetto, Dwarf",SAMI8
+"Parasoltree, Chinese",FISI
+Peach,PRPE2
+"Pear, Callery",PYCA
+"Pear, Callery 'Bradford'",PYCABR
+"Pear, Common",PYCO
+Pecan,CAIL
+"Persimmon, Common",DIVI
+"Photinia, Fraser",PHFR
+"Photinia, Taiwanese",PHSE
+"Pine, Austrian",PINI
+"Pine, Bolander beach",PICO5
+"Pine, Eastern white",PIST
+"Pine, Loblolly",PITA
+"Pine, Longleaf",PIPA
+"Pine, Shortleaf",PIEC
+"Pine, Slash",PIEL
+"Pine, Virginia",PIVI
+"Pistache, Chinese",PICH
+"Planetree, London",PLAC
+"Planetree, London 'Bloodgood'",PLACBL
+Plum,PR
+"Plum, American",PRAM
+"Plum, Cherry",PRCE
+"Podocarpus, Yew",POMA
+"Poplar, White",POAL
+Pride-of-India,MEAZ
+"Privet, Japanese",LIJA
+Redbay,PEBO
+"Redbud, Eastern",CECA
+"Redwood, Dawn",MEGL
+Rose-of-sharon,HISY
+"Rosemallow, Dixie",HIMU3
+Sassafras,SAAL
+"Spruce, Blue",PIPU
+Sugarberry,CELA
+Sweetgum,LIST
+"Sycamore, American",PLOC
+Tallowtree,TRSE6
+"Thorn, Fire",PYCO2
+"Thorn, Jerusalem",PAAC
+"Tree, Camphor",CICA
+"Tree, Chaste",VIAG
+"Tree, Chinese flame",KOBI
+"Tree, Goldenrain",KOPA
+"Tree, Tulip",LITU
+"Tupelo, Black",NYSY
+"Walnut, Black",JUNI
+"Washingtonia, Mexican",WARO
+Willow,SA
+"Willow, Black",SANI
+"Willow, Corkscrew",SAMA1
+"Willow, Wisconsin weeping",SAPE12
+"Wisteria, Japanese",WIFL
+Yaupon,ILVO
+Yellowwood,CLLU
+"Yucca, Moundlily",YUGL2
+"Zelkova, Japanese",ZESE
+Apple,MA2
+"Ash, Green",FRPE
+"Ash, White",FRAM
+Baldcypress,TADI
+"Basswood, American",TIAM
+"Bayberry, Southern",MYCE
+"Birch, River",BENI
+Boxelder,ACNE
+"Buckeye, Ohio",AEGL
+"Camellia, Sasanqua",CASA
+"Catalpa, Southern",CABI
+"Cedar, Atlantic white",CHTH
+"Cedar, Eastern red",JUVI
+"Cedar, Northern white",THOC
+"Cherry, Black",PRSE1
+"Cherry, Kwanzan",PRSE2
+Chokeberry,PHSP2
+Christmasbush,SEBI5
+"Cottonwood, Eastern",PODE
+"Crabapple, Southern",PYAN
+Crapemyrtle,LAIN
+"Crapemyrtle, Muskogee",LAMU
+"Crapemyrtle, Natchez",LANA
+"Crapemyrtle, Tuscarora",LATU
+"Crapemyrtle, Tuskegee",LATU1
+"Cypress, Italian",CUSE
+"Cypress, Leyland",CULE
+Dahoon,ILCA
+"Dahoon, Myrtle",ILMY
+"Dogwood, Flowering",COFL
+"Dogwood, Kousa",COKO
+Elm,ULS
+"Elm, American",ULAM
+"Elm, Chinese",ULPA
+"Elm, Drake Chinese",ULPADR
+"Elm, Emer II/Emerald Vase Chinese",ULPAEM
+"Elm, Siberian",ULPU
+"Elm, Slippery",ULRU
+"Elm, Winged",ULAL
+"Eucalyptus, Silver dollar",EUCI
+"Forsythia, Showy",FOIN3
+Ginkgo,GIBI
+"Gum, Sydney blue",EUSA
+"Haw, Black",VIPR
+"Hawthorn, Washington",CRPH
+Hickory,CA1
+"Hickory, Bitternut",CACO
+"Hickory, Mockernut",CATO
+"Hickory, Pignut",CAGL
+Holly,ILSP
+"Holly, American",ILOP
+"Holly, Chinese",ILCO2
+"Holly, Savannah",ILOPSA
+"Holly, Topal",ILAT
+Honeylocust,GLTR
+"Hornbeam, American",CACA
+Juniper,JU
+"Laurelcherry, Carolina",PRCA
+Ligustro,LISI
+"Linden, Littleleaf",TICO
+"Locust, Black",ROPS
+Loquat,ERJA
+"Magnolia, Chinese magnolia; Saucer",MASO
+"Magnolia, Little gem southern",MAGRLG
+"Magnolia, Southern",MAGR
+"Magnolia, Star",MAST
+"Magnolia, Umbrella",MATR
+"Maple, Amur",ACGI
+"Maple, Japanese",ACPA
+"Maple, October glory red",ACRUOC
+"Maple, Red",ACRU
+"Maple, Silver",ACSA1
+"Maple, Sugar",ACSA2
+"Maple, Trident",ACBU
+Mimosa,ALJU
+"Mulberry, Paper",BRPA
+"Mulberry, Red",MORU
+Oak,QU
+"Oak, Black",QUVE
+"Oak, Bluejack",QUCI
+"Oak, Darlington",QUHE
+"Oak, Laurel",QULA2
+"Oak, Live",QUVI
+"Oak, Northern red",QURU
+"Oak, Pin",QUPA
+"Oak, Post",QUST
+"Oak, Sawtooth",QUAC
+"Oak, Scarlet",QUCO
+"Oak, Shumard",QUSH
+"Oak, Southern red",QUFA
+"Oak, Swamp chestnut",QUMI
+"Oak, Turkey",QULA1
+"Oak, Water",QUNI
+"Oak, White",QUAL
+"Oak, Willow",QUPH
+Oleander,NEOL
+"Olive, Sweet",OSFR
+"Orange, Sour",CIAU2
+"Palm, Canary Island date",PHCA
+"Palm, European fan",CHHU
+"Palm, Jelly",BUCA
+"Palm, Sago",CYRE11
+"Palm, Windmill",TRFO
+"Palmetto, Cabbage",SAPA
+"Palmetto, Dwarf",SAMI8
+"Parasoltree, Chinese",FISI
+Peach,PRPE2
+"Pear, Callery",PYCA
+"Pear, Callery 'Bradford'",PYCABR
+"Pear, Common",PYCO
+Pecan,CAIL
+"Persimmon, Common",DIVI
+"Photinia, Fraser",PHFR
+"Photinia, Taiwanese",PHSE
+"Pine, Austrian",PINI
+"Pine, Bolander beach",PICO5
+"Pine, Eastern white",PIST
+"Pine, Loblolly",PITA
+"Pine, Longleaf",PIPA
+"Pine, Shortleaf",PIEC
+"Pine, Slash",PIEL
+"Pine, Virginia",PIVI
+"Pistache, Chinese",PICH
+"Planetree, London",PLAC
+"Planetree, London 'Bloodgood'",PLACBL
+Plum,PR
+"Plum, American",PRAM
+"Plum, Cherry",PRCE
+"Podocarpus, Yew",POMA
+"Poplar, White",POAL
+Pride-of-India,MEAZ
+"Privet, Japanese",LIJA
+Redbay,PEBO
+"Redbud, Eastern",CECA
+"Redwood, Dawn",MEGL
+Rose-of-sharon,HISY
+"Rosemallow, Dixie",HIMU3
+Sassafras,SAAL
+"Spruce, Blue",PIPU
+Sugarberry,CELA
+Sweetgum,LIST
+"Sycamore, American",PLOC
+Tallowtree,TRSE6
+"Thorn, Fire",PYCO2
+"Thorn, Jerusalem",PAAC
+"Tree, Camphor",CICA
+"Tree, Chaste",VIAG
+"Tree, Chinese flame",KOBI
+"Tree, Goldenrain",KOPA
+"Tree, Tulip",LITU
+"Tupelo, Black",NYSY
+"Walnut, Black",JUNI
+"Washingtonia, Mexican",WARO
+Willow,SA
+"Willow, Black",SANI
+"Willow, Corkscrew",SAMA1
+"Willow, Wisconsin weeping",SAPE12
+"Wisteria, Japanese",WIFL
+Yaupon,ILVO
+Yellowwood,CLLU
+"Yucca, Moundlily",YUGL2
+"Zelkova, Japanese",ZESE
+Apple,MA2
+"Ash, Green",FRPE
+"Ash, White",FRAM
+Baldcypress,TADI
+"Basswood, American",TIAM
+"Bayberry, Southern",MYCE
+"Birch, River",BENI
+Boxelder,ACNE
+"Buckeye, Ohio",AEGL
+"Camellia, Sasanqua",CASA
+"Catalpa, Southern",CABI
+"Cedar, Atlantic white",CHTH
+"Cedar, Eastern red",JUVI
+"Cedar, Northern white",THOC
+"Cherry, Black",PRSE1
+"Cherry, Kwanzan",PRSE2
+Chokeberry,PHSP2
+Christmasbush,SEBI5
+"Cottonwood, Eastern",PODE
+"Crabapple, Southern",PYAN
+Crapemyrtle,LAIN
+"Crapemyrtle, Muskogee",LAMU
+"Crapemyrtle, Natchez",LANA
+"Crapemyrtle, Tuscarora",LATU
+"Crapemyrtle, Tuskegee",LATU1
+"Cypress, Italian",CUSE
+"Cypress, Leyland",CULE
+Dahoon,ILCA
+"Dahoon, Myrtle",ILMY
+"Dogwood, Flowering",COFL
+"Dogwood, Kousa",COKO
+Elm,ULS
+"Elm, American",ULAM
+"Elm, Chinese",ULPA
+"Elm, Drake Chinese",ULPADR
+"Elm, Emer II/Emerald Vase Chinese",ULPAEM
+"Elm, Siberian",ULPU
+"Elm, Slippery",ULRU
+"Elm, Winged",ULAL
+"Eucalyptus, Silver dollar",EUCI
+"Forsythia, Showy",FOIN3
+Ginkgo,GIBI
+"Gum, Sydney blue",EUSA
+"Haw, Black",VIPR
+"Hawthorn, Washington",CRPH
+Hickory,CA1
+"Hickory, Bitternut",CACO
+"Hickory, Mockernut",CATO
+"Hickory, Pignut",CAGL
+Holly,ILSP
+"Holly, American",ILOP
+"Holly, Chinese",ILCO2
+"Holly, Savannah",ILOPSA
+"Holly, Topal",ILAT
+Honeylocust,GLTR
+"Hornbeam, American",CACA
+Juniper,JU
+"Laurelcherry, Carolina",PRCA
+Ligustro,LISI
+"Linden, Littleleaf",TICO
+"Locust, Black",ROPS
+Loquat,ERJA
+"Magnolia, Chinese magnolia; Saucer",MASO
+"Magnolia, Little gem southern",MAGRLG
+"Magnolia, Southern",MAGR
+"Magnolia, Star",MAST
+"Magnolia, Umbrella",MATR
+"Maple, Amur",ACGI
+"Maple, Japanese",ACPA
+"Maple, October glory red",ACRUOC
+"Maple, Red",ACRU
+"Maple, Silver",ACSA1
+"Maple, Sugar",ACSA2
+"Maple, Trident",ACBU
+Mimosa,ALJU
+"Mulberry, Paper",BRPA
+"Mulberry, Red",MORU
+Oak,QU
+"Oak, Black",QUVE
+"Oak, Bluejack",QUCI
+"Oak, Darlington",QUHE
+"Oak, Laurel",QULA2
+"Oak, Live",QUVI
+"Oak, Northern red",QURU
+"Oak, Pin",QUPA
+"Oak, Post",QUST
+"Oak, Sawtooth",QUAC
+"Oak, Scarlet",QUCO
+"Oak, Shumard",QUSH
+"Oak, Southern red",QUFA
+"Oak, Swamp chestnut",QUMI
+"Oak, Turkey",QULA1
+"Oak, Water",QUNI
+"Oak, White",QUAL
+"Oak, Willow",QUPH
+Oleander,NEOL
+"Olive, Sweet",OSFR
+"Orange, Sour",CIAU2
+"Palm, Canary Island date",PHCA
+"Palm, European fan",CHHU
+"Palm, Jelly",BUCA
+"Palm, Sago",CYRE11
+"Palm, Windmill",TRFO
+"Palmetto, Cabbage",SAPA
+"Palmetto, Dwarf",SAMI8
+"Parasoltree, Chinese",FISI
+Peach,PRPE2
+"Pear, Callery",PYCA
+"Pear, Callery 'Bradford'",PYCABR
+"Pear, Common",PYCO
+Pecan,CAIL
+"Persimmon, Common",DIVI
+"Photinia, Fraser",PHFR
+"Photinia, Taiwanese",PHSE
+"Pine, Austrian",PINI
+"Pine, Bolander beach",PICO5
+"Pine, Eastern white",PIST
+"Pine, Loblolly",PITA
+"Pine, Longleaf",PIPA
+"Pine, Shortleaf",PIEC
+"Pine, Slash",PIEL
+"Pine, Virginia",PIVI
+"Pistache, Chinese",PICH
+"Planetree, London",PLAC
+"Planetree, London 'Bloodgood'",PLACBL
+Plum,PR
+"Plum, American",PRAM
+"Plum, Cherry",PRCE
+"Podocarpus, Yew",POMA
+"Poplar, White",POAL
+Pride-of-India,MEAZ
+"Privet, Japanese",LIJA
+Redbay,PEBO
+"Redbud, Eastern",CECA
+"Redwood, Dawn",MEGL
+Rose-of-sharon,HISY
+"Rosemallow, Dixie",HIMU3
+Sassafras,SAAL
+"Spruce, Blue",PIPU
+Sugarberry,CELA
+Sweetgum,LIST
+"Sycamore, American",PLOC
+Tallowtree,TRSE6
+"Thorn, Fire",PYCO2
+"Thorn, Jerusalem",PAAC
+"Tree, Camphor",CICA
+"Tree, Chaste",VIAG
+"Tree, Chinese flame",KOBI
+"Tree, Goldenrain",KOPA
+"Tree, Tulip",LITU
+"Tupelo, Black",NYSY
+"Walnut, Black",JUNI
+"Washingtonia, Mexican",WARO
+Willow,SA
+"Willow, Black",SANI
+"Willow, Corkscrew",SAMA1
+"Willow, Wisconsin weeping",SAPE12
+"Wisteria, Japanese",WIFL
+Yaupon,ILVO
+Yellowwood,CLLU
+"Yucca, Moundlily",YUGL2
+"Zelkova, Japanese",ZESE
+Apple,MA2
+"Ash, Green",FRPE
+"Ash, White",FRAM
+Baldcypress,TADI
+"Basswood, American",TIAM
+"Bayberry, Southern",MYCE
+"Birch, River",BENI
+Boxelder,ACNE
+"Buckeye, Ohio",AEGL
+"Camellia, Sasanqua",CASA
+"Catalpa, Southern",CABI
+"Cedar, Atlantic white",CHTH
+"Cedar, Eastern red",JUVI
+"Cedar, Northern white",THOC
+"Cherry, Black",PRSE1
+"Cherry, Kwanzan",PRSE2
+Chokeberry,PHSP2
+Christmasbush,SEBI5
+"Cottonwood, Eastern",PODE
+"Crabapple, Southern",PYAN
+Crapemyrtle,LAIN
+"Crapemyrtle, Muskogee",LAMU
+"Crapemyrtle, Natchez",LANA
+"Crapemyrtle, Tuscarora",LATU
+"Crapemyrtle, Tuskegee",LATU1
+"Cypress, Italian",CUSE
+"Cypress, Leyland",CULE
+Dahoon,ILCA
+"Dahoon, Myrtle",ILMY
+"Dogwood, Flowering",COFL
+"Dogwood, Kousa",COKO
+Elm,ULS
+"Elm, American",ULAM
+"Elm, Chinese",ULPA
+"Elm, Drake Chinese",ULPADR
+"Elm, Emer II/Emerald Vase Chinese",ULPAEM
+"Elm, Siberian",ULPU
+"Elm, Slippery",ULRU
+"Elm, Winged",ULAL
+"Eucalyptus, Silver dollar",EUCI
+"Forsythia, Showy",FOIN3
+Ginkgo,GIBI
+"Gum, Sydney blue",EUSA
+"Haw, Black",VIPR
+"Hawthorn, Washington",CRPH
+Hickory,CA1
+"Hickory, Bitternut",CACO
+"Hickory, Mockernut",CATO
+"Hickory, Pignut",CAGL
+Holly,ILSP
+"Holly, American",ILOP
+"Holly, Chinese",ILCO2
+"Holly, Savannah",ILOPSA
+"Holly, Topal",ILAT
+Honeylocust,GLTR
+"Hornbeam, American",CACA
+Juniper,JU
+"Laurelcherry, Carolina",PRCA
+Ligustro,LISI
+"Linden, Littleleaf",TICO
+"Locust, Black",ROPS
+Loquat,ERJA
+"Magnolia, Chinese magnolia; Saucer",MASO
+"Magnolia, Little gem southern",MAGRLG
+"Magnolia, Southern",MAGR
+"Magnolia, Star",MAST
+"Magnolia, Umbrella",MATR
+"Maple, Amur",ACGI
+"Maple, Japanese",ACPA
+"Maple, October glory red",ACRUOC
+"Maple, Red",ACRU
+"Maple, Silver",ACSA1
+"Maple, Sugar",ACSA2
+"Maple, Trident",ACBU
+Mimosa,ALJU
+"Mulberry, Paper",BRPA
+"Mulberry, Red",MORU
+Oak,QU
+"Oak, Black",QUVE
+"Oak, Bluejack",QUCI
+"Oak, Darlington",QUHE
+"Oak, Laurel",QULA2
+"Oak, Live",QUVI
+"Oak, Northern red",QURU
+"Oak, Pin",QUPA
+"Oak, Post",QUST
+"Oak, Sawtooth",QUAC
+"Oak, Scarlet",QUCO
+"Oak, Shumard",QUSH
+"Oak, Southern red",QUFA
+"Oak, Swamp chestnut",QUMI
+"Oak, Turkey",QULA1
+"Oak, Water",QUNI
+"Oak, White",QUAL
+"Oak, Willow",QUPH
+Oleander,NEOL
+"Olive, Sweet",OSFR
+"Orange, Sour",CIAU2
+"Palm, Canary Island date",PHCA
+"Palm, European fan",CHHU
+"Palm, Jelly",BUCA
+"Palm, Sago",CYRE11
+"Palm, Windmill",TRFO
+"Palmetto, Cabbage",SAPA
+"Palmetto, Dwarf",SAMI8
+"Parasoltree, Chinese",FISI
+Peach,PRPE2
+"Pear, Callery",PYCA
+"Pear, Callery 'Bradford'",PYCABR
+"Pear, Common",PYCO
+Pecan,CAIL
+"Persimmon, Common",DIVI
+"Photinia, Fraser",PHFR
+"Photinia, Taiwanese",PHSE
+"Pine, Austrian",PINI
+"Pine, Bolander beach",PICO5
+"Pine, Eastern white",PIST
+"Pine, Loblolly",PITA
+"Pine, Longleaf",PIPA
+"Pine, Shortleaf",PIEC
+"Pine, Slash",PIEL
+"Pine, Virginia",PIVI
+"Pistache, Chinese",PICH
+"Planetree, London",PLAC
+"Planetree, London 'Bloodgood'",PLACBL
+Plum,PR
+"Plum, American",PRAM
+"Plum, Cherry",PRCE
+"Podocarpus, Yew",POMA
+"Poplar, White",POAL
+Pride-of-India,MEAZ
+"Privet, Japanese",LIJA
+Redbay,PEBO
+"Redbud, Eastern",CECA
+"Redwood, Dawn",MEGL
+Rose-of-sharon,HISY
+"Rosemallow, Dixie",HIMU3
+Sassafras,SAAL
+"Spruce, Blue",PIPU
+Sugarberry,CELA
+Sweetgum,LIST
+"Sycamore, American",PLOC
+Tallowtree,TRSE6
+"Thorn, Fire",PYCO2
+"Thorn, Jerusalem",PAAC
+"Tree, Camphor",CICA
+"Tree, Chaste",VIAG
+"Tree, Chinese flame",KOBI
+"Tree, Goldenrain",KOPA
+"Tree, Tulip",LITU
+"Tupelo, Black",NYSY
+"Walnut, Black",JUNI
+"Washingtonia, Mexican",WARO
+Willow,SA
+"Willow, Black",SANI
+"Willow, Corkscrew",SAMA1
+"Willow, Wisconsin weeping",SAPE12
+"Wisteria, Japanese",WIFL
+Yaupon,ILVO
+Yellowwood,CLLU
+"Yucca, Moundlily",YUGL2
+"Zelkova, Japanese",ZESE
