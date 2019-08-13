@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <title> Chart </title>
+</head>
+<body>
+    <canvas id="myChart" style="max-width: 500px;"></canvas>
+    <script>
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ["CO2 Avoided", "CO2 Sequestered", "Fuel Saved", "Avoided Runoff "],
+            datasets: [{
+              label: '이득',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: true
+                }
+              }]
+            }
+          }
+        });
+
+    </script>
+    <canvas id="pieChart"></canvas>
+    <script>
+    var ctxP = document.getElementById("pieChart").getContext('2d');
+    var myPieChart = new Chart(ctxP, {
+      type: 'pie',
+      data: {
+        labels: ["은행나무", "양버즘나무", "느티나무", "버즘나무", "메타세쿼이아", "벚나무", "소나무", "왕벚나무", "회화나무", "이팝나무"],
+        datasets: [{
+          data: [300, 150, 100, 90, 80, 70, 20, 20, 30, 10],
+          backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#F9F506", "#15E8EF", "#8258FA" , "#04B404" , "#6E105A" , "#8B1517", ,"#C3C033"],
+          hoverBackgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#F9F506", "#15E8EF", "#8258FA" , "#04B404" , "#6E105A" , "#8B1517", ,"#C3C033"]
+        }]
+      },
+      options: {
+        responsive: true
+      }
+    });
+    </script>
+</body>
+</html>
