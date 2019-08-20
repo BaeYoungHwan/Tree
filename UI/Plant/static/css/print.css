@@ -1,0 +1,19 @@
+#content a:link:after,
+#content a:visited:after {
+	content: " (" attr(href) ") ";
+}
+
+html.noted #content a:link:after,
+html.noted #content a:visited:after {
+	content: '';
+}
+
+#main {
+	margin:0px 0px;
+	width:auto;
+	min-width:0px;
+}
+
+html.noted #footnotes {
+	display:block;
+}

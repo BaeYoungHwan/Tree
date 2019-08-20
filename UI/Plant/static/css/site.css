@@ -1,0 +1,57 @@
+body {
+	top:0px !important;
+	position:static !important;
+}
+
+#main {
+	margin:0px auto;
+	margin-bottom:50px;
+	width:950px;
+	min-width:950px;
+}
+
+#footer {
+	text-align:right;
+}
+
+#sharethis {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	text-align:center;
+	z-index:1;
+}
+
+.navbar-default .navbar-header {
+	color:#4f80bd;
+}
+
+.navbar-default .navbar-brand {
+    color:#4f80bd;
+    font-family:"Calibri","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding:0 15px;
+}
+
+.navbar-default .navbar-brand img {
+	vertical-align:top;
+	height:48px;
+	margin:2px 5px 2px 0px;
+	padding-bottom:3px;
+	display:inline;
+}
+
+.navbar-default .navbar-brand .navbar-title-text {
+	display:inline-block;
+	font-size:28px;
+	line-height:20px;
+	margin-top:14px;
+}
+
+.navbar-default .navbar-brand sub {
+	font-size:10px;
+}
+
+.goog-te-banner-frame {
+	display:none !important;
+}

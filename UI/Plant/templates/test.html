@@ -1,0 +1,343 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <!-- Bootstrap CSS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2f9Ov2vdnIuQH_v6TueJW6vijU8rtVfo&callback=initMap" async defer></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/d3.v4.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/sector.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/secotr1.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+        var sites = readTotalSites1();
+        var values = readValueDifference1();
+
+        var transparent = false;
+        var recs = new Array();
+
+        var dataTxt = ["은행나무", "버즘나무", "느티나무", "벚나무", "소나무", "단풍나무", "회화나무", "메타세쿼이아", "중국단풍", "버드나무"
+        ,"사시나무", "물푸레나무", "목련", "칠엽수", "가죽나무", "향나무", "오동나무", "감나무", "모과나무", "살구나무","기타"];
+
+        function Data(lat, lng) {
+            this.lat = lat;
+            this.lng = lng;
+        }
+
+        function Rec(coordi, value) {
+            this.coordi = coordi;
+            this.value = value;
+            this.on = false;
+            this.polygon;
+            this.temp;
+            this.tempValue;
+        }
+
+        PutData();
+
+        var groupSelect = new Array();
+        for (var i = 0 ; i < 21 ; i++) groupSelect[i] = 0;
+
+
+
+        function initialize() {
+            // var styledMap = new google.maps.StyledMapType(styles, { name: "Styled Map" });
+            // Google Map
+            var mapOptions = {
+                center: new google.maps.LatLng(37.51875, 126.91),
+                zoom: 15,
+            };
+
+            map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+            // google.map setting 고정
+            // map.mapTypes.set('map_style', styledMap);
+            // map.setMapTypeId('map_style');
+
+            DrawBackground();
+
+            for (var i = 0 ; i < recs.length ; i++) drawPolygon(recs[i]);
+
+
+            document.body.onkeyup = function (e) {
+                if (e.keyCode == 32) {
+                    for (var i = 0 ; i < 72 ; i++) {
+                        document.getElementsByClassName("group" + i)[0].id = "unselected";
+                        groupSelect[i] = 0;
+                    };
+                    reInit();
+
+                } else if (e.keyCode == 101 || e.keyCode == 69) {
+                    if (transparent) {
+                        for (var i = 0 ; i < recs.length ; i++) {
+                            var fillOpa = (recs[i].tempValue == -99999 || isNaN(recs[i].tempValue)) ? 0 : 1;
+                            recs[i].polygon.setOptions({ fillOpacity: fillOpa });
+                        };
+                        transparent = false;
+                    } else {
+                        for (var i = 0 ; i < recs.length ; i++) {
+                            recs[i].polygon.setOptions({ fillOpacity: 0 });
+                        };
+                        transparent = true;
+                    }
+
+                }
+            }
+
+        } //initialize()
+
+
+
+        function PutData() {
+
+            var cnt = 0;
+
+            for (var i = 0; i < sites.length; i++) {
+
+                if (sites[i].length != 0) {
+
+                    var coordiTemp = new Array();
+                    for (var j = 0 ; j < sites[i].length ; j++) {
+                        coordiTemp.push(new Data(sites[i][j][1], sites[i][j][0]));
+                    }
+
+                    var valueTemp = new Array();
+                    for (var j = 0 ; j < values[i].length ; j++) {
+                        valueTemp.push(values[i][j]);
+                    }
+
+                    recs.push(new Rec(coordiTemp, valueTemp));
+                    cnt++;
+                }
+            }
+        }
+
+        function DrawBackground() {
+            var backRect = new Array();
+            var backCoord = [[37.485, 126.878], [37.485, 126.942], [37.5525, 126.942], [37.5525, 126.878], [37.485, 126.878]];
+            for (var i = 0 ; i < backCoord.length ; i++) {
+                backRect.push(new google.maps.LatLng(backCoord[i][0],backCoord[i][1]));
+            }
+
+            var polygons = {
+                path: backRect,
+                strokeColor: "#ffffff",
+                strokeOpacity: 1,
+                strokeWeight: 0,
+                fillColor: "#ffffff",
+                fillOpacity: 0.8,
+                zIndex: 100
+            };
+
+            // 하얀색 도화지 그리는 함수
+            var background = new google.maps.Polygon(polygons);
+            background.setMap(map);
+        }
+
+
+
+
+        function drawPolygon(datum) {
+
+            var polygonCoords = new Array();
+
+            for (var i = 0 ; i < datum.coordi.length ; i++) {
+                polygonCoords.push(new google.maps.LatLng(datum.coordi[i].lat, datum.coordi[i].lng));
+            }
+
+            var stColor = "#ea2316";
+
+
+            var  flColor = "white";
+            var  fillOpa = 0;
+
+            var polygons = {
+                path: polygonCoords,
+                strokeColor: stColor,
+                strokeOpacity: 0.5,
+                strokeWeight: 0.3,
+                fillColor: flColor,
+                fillOpacity: fillOpa,
+                zIndex : 200,
+                map :map
+            };
+
+            datum.polygon = new google.maps.Polygon(polygons);
+
+
+
+            //tooltips
+            // infoWindow 이놈이 격자안에 데이터 넣는 놈
+            var contentText = "<table border=\"0\"><tr>200m x 200m 격자에서 수목명 별 나무 (x 는 아예 없음을 나타냄)</tr><tr>";
+            for (var i = 0 ; i < dataTxt.length ; i++) contentText += "<td>"+ dataTxt[i] + "</td>"
+
+            contentText += "</tr><tr>";
+            for (var i = 0 ; i < datum.value.length ; i++) contentText += "<td>"+datum.value[i] + "</td>";
+            contentText += "</tr></table>";
+
+            var infoWindow = new google.maps.InfoWindow({ content: contentText, manWidth: 1000 });
+            google.maps.event.addListener(datum.polygon, 'click', function () {
+                infoWindow.setPosition(new google.maps.LatLng((datum.coordi[0].lat + datum.coordi[2].lat) / 2, (datum.coordi[0].lng + datum.coordi[2].lng) / 2));
+                infoWindow.open(map);
+            });
+
+            google.maps.event.addListener(datum.polygon, 'mouseout', function () {
+                infoWindow.open(null);
+            });
+        }
+
+    </script>
+
+    <style>
+        html, body {
+            height: 80%;
+            margin: 0;
+            padding: 0;
+        }
+
+        svg {
+
+            position: absolute;
+            top: 60px;
+            left: 100px;
+            z-index: 5;
+
+        }
+
+        /* 화면 크기 조절하는 부분 */
+        #main_area {
+            height: 100%;
+            width: 100%;
+        }
+
+            #main_area > #map_canvas {
+                position : absolute;
+                right : 250px;
+                left : 0;
+                display : inline-block;
+                height: 90%;
+
+            }
+
+
+        @media print {
+            html, body {
+                height: auto;
+            }
+
+            #map-canvas, #map_canvas {
+                height: 600px;
+            }
+        }
+
+
+        svg text {
+            font-family: Arial;
+            fill : #ffffff;
+            font-weight : bold;
+
+        }
+
+        svg path {
+            stroke: #fff;
+        }
+
+
+
+        ul.group >li {
+            font-family: '맑은 고딕', Arial;
+            font-weight : bold;
+            font-size : 10px;
+            text-align :center;
+            line-height : 13px;
+            display :block;
+            height : 13px;
+            width : 109px;
+            padding : 5px 5px 5px 5px;
+            margin : 2px 0px 2px 0px;
+        }
+
+        ul.group >  #unselected {
+            background-color: #f2f2f2;
+            color : black;
+        }
+
+    </style>
+
+</head>
+
+<body onload="initialize()">
+    {% include 'Design.html' %}
+
+<!-- As a link -->
+    <div id="main_area" >
+        <section id="map_canvas" ></section>
+        <canvas id="pieChart" style="max-width: 250px; display: block; height: 300px; width: 250px; position: absolute; top: 100px; right: 0;"></canvas>
+        <canvas id="myChart" style="max-width: 250px; display: block; height: 300px; width: 250px;  position: absolute; top: 450px; right: 0;"></canvas>
+        <a class="btn btn-danger" href="/Color/Report" role="button"  style=" position: absolute; top: 750px; right: 20px;"> Report </a>
+        <input class="btn btn-success" type="button" value="추천" style=" position: absolute; top: 750px; right: 95px;">
+        <a class="btn btn-primary" href="/Color/Location" role="button" style=" position: absolute; top: 750px; right: 160px;"> Location </a>
+        <script>
+            var ctxP = document.getElementById("pieChart").getContext('2d');
+            var myPieChart = new Chart(ctxP, {
+              type: 'pie',
+              data: {
+                labels: ["은행나무", "양버즘나무", "느티나무", "버즘나무", "메타세쿼이아", "벚나무", "소나무", "왕벚나무", "회화나무", "이팝나무"],
+                datasets: [{
+                  data: [300, 150, 100, 90, 80, 70, 20, 20, 30, 10],
+                  backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#F9F506", "#15E8EF", "#8258FA" , "#04B404" , "#6E105A" , "#8B1517", ,"#C3C033"],
+                  hoverBackgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#F9F506", "#15E8EF", "#8258FA" , "#04B404" , "#6E105A" , "#8B1517", ,"#C3C033"]
+                }]
+              },
+              options: {
+                responsive: true
+              }
+            });
+        </script>
+        <script>
+            var ctx = document.getElementById("myChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ["CO2 Avoided", "CO2 Sequestered", "Fuel Saved", "Avoided Runoff "],
+                datasets: [{
+                  label: '이득',
+                  data: [12, 19, 3, 5, 2, 3],
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero: true
+                    }
+                  }]
+                }
+              }
+            });
+    </script>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+</body>
+</html>
