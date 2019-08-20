@@ -179,7 +179,7 @@ readValueDifference
             contentText += "</tr></table>";
 
             var infoWindow = new google.maps.InfoWindow({ content: contentText, manWidth: 500 });
-            google.maps.event.addListener(datum.polygon, 'Click', function () {
+            google.maps.event.addListener(datum.polygon, 'click', function () {
                 infoWindow.setPosition(new google.maps.LatLng((datum.coordi[0].lat + datum.coordi[2].lat) / 2, (datum.coordi[0].lng + datum.coordi[2].lng) / 2));
                 infoWindow.open(map);
             });
