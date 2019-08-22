@@ -13,6 +13,7 @@
       <list>
         <option value="Flask Main" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -21,9 +22,11 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/kdata3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -32,6 +35,8 @@
       <recent name="C:\Users\배현지\PycharmProjects\untitled1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\배현지\PycharmProjects\Plant\templates" />
+      <recent name="C:\Users\배현지\PycharmProjects\Plant" />
       <recent name="C:\Users\배현지\PycharmProjects\untitled1\js" />
       <recent name="C:\Users\배현지\PycharmProjects\untitled1\css" />
     </key>
@@ -89,7 +94,10 @@
       <workItem from="1566374513565" duration="49000" />
       <workItem from="1566375095786" duration="72000" />
       <workItem from="1566376174042" duration="6725000" />
-      <workItem from="1566392441352" duration="1971000" />
+      <workItem from="1566392441352" duration="3885000" />
+      <workItem from="1566440474928" duration="7050000" />
+      <workItem from="1566453945568" duration="795000" />
+      <workItem from="1566454886284" duration="5199000" />
     </task>
     <servers />
   </component>
@@ -121,7 +129,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Plant$untitled1.coverage" NAME="untitled1 Coverage Results" MODIFIED="1566437576070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Plant$untitled1.coverage" NAME="untitled1 Coverage Results" MODIFIED="1566459841869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled1$untitled1.coverage" NAME="untitled1 Coverage Results" MODIFIED="1566289901660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

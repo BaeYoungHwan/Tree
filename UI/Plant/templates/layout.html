@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Plant, Plant! </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-submenu/2.0.4/css/bootstrap-submenu.min.css" integrity="sha256-a2WBVPjMkkhD4E3Wgv0o3vSNMaHN2og2+nfo7fy761M=" crossorigin="anonymous" />
+<!--	<link rel="stylesheet" type="text/css" href="/css/site.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/css/print.css" media="print" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2f9Ov2vdnIuQH_v6TueJW6vijU8rtVfo&callback=initMap" async defer></script> -->
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+	<div id="main">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="containter-fluid">
+				<div class="navbar-header">
+					<a href="/" class="navbar-brand">
+						<img class="nav-hidden-xs" src="{{ url_for('static', filename='icon/leaf.svg') }}" width="30" height="30" alt= " " style="display: inline; vertical-align: top; margin: 2px 5px 2px 0px; padding-bottom: 3px;">
+						<h3 class="navbar-title-text" style="display: inline-block; font-size: 28px; line-height: 0px; margin-top: 14px;">Plant, Plant!<sub>v1.0</sub></h3>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="deisgn-top-nav">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="/">Home</a>
+						</li>
+						<li class="dropdown">
+							<a data-toggle="dropdown" href="#" data-submenu="" data-target="#" role="button" aria-expanded="false" aria-haspopup="true"
+								>Menu <i class="fa fa-caret-down"></i></a>
+							<ul class="dropdown-menu" role="menu">
+								<li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="/Menut"
+										> Plant, Benefit </a>
+                                    <a class="dropdown-item" href="/Menur"
+										> Dong's Color </a>
+									<ul class="dropdown-menu" role="menu"></ul>
+                                <li><div style="margin: 0px 10px;"><div id="google_translate_element"></div></div></li>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="http://bigjob.dbguide.net/">빅데이터청년인재</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		</div>
+	</div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
