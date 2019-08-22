@@ -7,6 +7,7 @@
     <title></title>
      <style>
           body {
+              width: 100%;
             margin: 0px;
             font-family: 'Apple SD Gothic Neo','Noto Sans','Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif !important;
              overflow: hidden;
@@ -179,7 +180,7 @@
                         name: d.dong_nm,
                     }
                 })
-              .defer(d3.csv, "{{ url_for('static', filename='data/data.csv') }}", function(d){
+              .defer(d3.csv, "{{ url_for('static', filename='data/data2.csv') }}", function(d){
                   //console.log(d.code);
                   return {
                       code: d.code,
@@ -905,6 +906,7 @@
 
                 }
 
+
                 function fillEMD(s) {
                     //console.log(frame);
                     switch (frame) {
@@ -1321,7 +1323,6 @@
     </script>
 </head>
 <body>
-    {% include 'Design.html' %}
 
     <div id="wrap_middle">
 
