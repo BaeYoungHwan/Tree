@@ -2,27 +2,18 @@ from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
-@app.route('/Color/Dong')
-def hello_world():
-    return render_template('test.html')
+@app.route('/')
+def Home():
+    return render_template('Home.html')
 
-@app.route('/Color/Location')
-@app.route('/Color')
+@app.route('/Plant')
 def Color():
     return render_template('Color.html')
 
-@app.route('/Plant')
-def Plant():
-    return render_template('Plant.html')
-
-@app.route('/Recommend')
-def Recoomend():
-    return render_template('Recommend.html')
-
-@app.route('/')
-def Hi():
-    return render_template('Design.html')
-
+@app.route('/Color')
+@app.route('/Color/Dong')
+def Plant1():
+    return render_template('Dong.html')
 
 @app.route('/Plnat/Report')
 @app.route('/Color/Report')
