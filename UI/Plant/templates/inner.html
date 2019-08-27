@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <style id="compiled-css" type="text/css">
+      .grid { margin:1em auto; border-collapse:collapse }
+
+    .grid td {
+        cursor:pointer;
+        width:70px; height:70px;
+        border:1px solid #ccc;
+        text-align:center;
+        font-family:sans-serif; font-size:13px
+    }
+    .grid td.clicked {
+        background-color:yellow;
+        font-weight:bold; color:red;
+    }
+  </style>
+
+
+  <!-- TODO: Missing CoffeeScript 2 -->
+
+  <script type="text/javascript">//<![CDATA[
+    var treeList = [' ', ' ', '은행나무', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '버즘나무', ' ', ' ', ' ', ' ', ' ', ' ', '은행나무', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '건물', ' ', ' ', ' ', ' ', ' ', '건물', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '버즘나무', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '은행나무', ' ', ' ', '건물', ' ', ' ', ' ', '건물', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '버즘나무'];
+    var sector = [56, '수목명']  // 추천할때 받아올 리스트
+    var List = ['은행나무', '버즘나무', '단풍나무', '배나무', '감나무'] // 심기할때 쓸 수목명 리스트
+    var lastClicked;
+    var Row; // 심기할때 클릭의 위치에 대해 심기 할 변수.
+    var Col;
+
+    var grid = clickableGrid(treeList, 10,10,function(el,row,col,i){
+        console.log("You clicked on element:",el);
+        console.log("You clicked on row:",row);
+        console.log("You clicked on col:",col);
+        console.log("You clicked on item #:",i);
+
+        el.className='clicked';
+        if (lastClicked) lastClicked.className='';
+        lastClicked = el;
+        Row = row;
+        Col = col;
+
+    });
+
+    function clickableGrid(treeLocation, rows, cols, callback ){
+        var grid_value = treeLocation;
+        var i=0;
+        var grid = document.createElement('table');
+        grid.className = 'grid';
+        for (var r=0;r<rows;++r){
+            var tr = grid.appendChild(document.createElement('tr'));
+            for (var c=0;c<cols;++c){
+                ++i;
+                var cell = tr.appendChild(document.createElement('td'));
+                // 셀 안에 텍스트 출력하는 곳 (if 문으로 다른 값 출력 가능)
+                if(grid_value[i-1] == '건물'){cell.innerHTML = '건물';}else if (grid_value[i-1] == ' ') {cell.innerHTML = ' ';} else{cell.innerHTML = grid_value[i-1];}
+                //cell.innerHTML = grid_value[(i-1)];
+
+
+                cell.addEventListener('click',(function(el,r,c,i){
+                    return function(){
+                        callback(el,r,c,i);
+                    }
+                })(cell,r,c,i),false);
+            }
+        }
+        return grid;
+    }
+
+  // 추천할때 사용하는 코드.
+    function ChangeList(treeLocation, sector) {
+        treeLocation[sector[0]] = sector[1]
+
+        var grid = clickableGrid(treeLocation, 10, 10, function (el, row, col, i) {
+            console.log("You clicked on element:", el);
+            console.log("You clicked on row:", row);
+            console.log("You clicked on col:", col);
+            console.log("You clicked on item #:", i);
+
+            el.className = 'clicked';
+            if (lastClicked) lastClicked.className = '';
+            lastClicked = el;
+        });
+
+        function clickableGrid(treeLocation, rows, cols, callback) {
+            var grid_value = treeLocation;
+            var i = 0;
+            var grid = document.createElement('table');
+            grid.className = 'grid';
+            for (var r = 0; r < rows; ++r) {
+                var tr = grid.appendChild(document.createElement('tr'));
+                for (var c = 0; c < cols; ++c) {
+                    ++i;
+                    var cell = tr.appendChild(document.createElement('td'));
+                    // 셀 안에 텍스트 출력하는 곳 (if 문으로 다른 값 출력 가능)
+                    if (grid_value[i - 1] == '건물') {
+                        cell.innerHTML = '건물';
+                    } else if (grid_value[i - 1] == ' ') {
+                        cell.innerHTML = ' ';
+                    } else {
+                        cell.innerHTML = grid_value[i - 1];
+                    }
+                    //cell.innerHTML = grid_value[(i-1)];
+
+
+                    cell.addEventListener('click', (function (el, r, c, i) {
+                        return function () {
+                            callback(el, r, c, i);
+                        }
+                    })(cell, r, c, i), false);
+                }
+            }
+            return grid;
+        }
+    return document.body.appendChild(grid)
+    }
+        // 심을때 사용하는 코드
+
+      function Plant(treeLocation, list) {
+        treeLocation[(Row*10)+Col] = list
+        var grid = clickableGrid(treeLocation, 10, 10, function (el, row, col, i) {
+            console.log("You clicked on element:", el);
+            console.log("You clicked on row:", row);
+            console.log("You clicked on col:", col);
+            console.log("You clicked on item #:", i);
+
+            el.className = 'clicked';
+            if (lastClicked) lastClicked.className = '';
+            lastClicked = el;
+            Row = row;
+            Col = col
+        });
+
+        function clickableGrid(treeLocation, rows, cols, callback) {
+            var grid_value = treeLocation;
+            var i = 0;
+            var grid = document.createElement('table');
+            grid.className = 'grid';
+            for (var r = 0; r < rows; ++r) {
+                var tr = grid.appendChild(document.createElement('tr'));
+                for (var c = 0; c < cols; ++c) {
+                    ++i;
+                    var cell = tr.appendChild(document.createElement('td'));
+                    // 셀 안에 텍스트 출력하는 곳 (if 문으로 다른 값 출력 가능)
+                    if (grid_value[i - 1] == '건물') {
+                        cell.innerHTML = '건물';
+                    } else if (grid_value[i - 1] == ' ') {
+                        cell.innerHTML = ' ';
+                    } else {
+                        cell.innerHTML = grid_value[i - 1];
+                    }
+                    //cell.innerHTML = grid_value[(i-1)];
+
+
+                    cell.addEventListener('click', (function (el, r, c, i) {
+                        return function () {
+                            callback(el, r, c, i);
+                        }
+                    })(cell, r, c, i), false);
+                }
+            }
+            return grid;
+        }
+    return document.body.appendChild(grid)
+    }
+
+
+
+
+
+
+  window.onload=function(){
+    document.body.appendChild(grid);
+  }
+
+
+  //]]></script>
+</head>
+
+<body>
+    <!-- ist 를 통해서 심기(Plant) 종류 선정 -->
+    <a class="btn btn-danger" href="#" onclick="ist = List[0]">은행나무</a>
+    <a class="btn btn-danger" href="#" onclick="ist = List[1]">버즘나무</a>
+    <a class="btn btn-danger" href="#" onclick="ist = List[2]">단풍나무</a>
+    <a class="btn btn-danger" href="#" onclick="ist = List[3]">배나무</a>
+    <a class="btn btn-danger" href="#" onclick="ist = List[4]">감나무</a>
+    <a class="btn btn-danger" role="button"  onclick="ChangeList(treeList,sector)" style=" position: absolute; top: 750px; right: 20px;">추천</a>
+    <a class="btn btn-danger" role="button"  onclick="Plant(treeList,ist)" style=" position: absolute; top: 750px; right: 120px;">심기</a>
+    <script>
+           // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "6qkdP"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+    </script>
+</body>
+</html>
