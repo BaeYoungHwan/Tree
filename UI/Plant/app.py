@@ -27,7 +27,9 @@ def Menu():
 def Menu1():
     return render_template('Dongr.html')
 
-
+@app.route('/ii')
+def inner():
+    return render_template('inner.html')
 
 
 if __name__ == '__main__':
